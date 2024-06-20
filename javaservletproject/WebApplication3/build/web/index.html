@@ -1,0 +1,113 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="newcss.css"/>
+    
+     <style> 
+        #main { 
+            height: 150px; 
+            width: 1225px; 
+            background-color: lightgoldenrodyellow; 
+            background-image: radial-gradient(#090, #fff, lightcyan); 
+        } 
+  
+        .gfg { 
+            text-align: center; 
+            font-size: 30px; 
+            font-weight: bold; 
+            padding-top: 70px; 
+        } 
+  
+        .geeks { 
+            font-size: 14px; 
+            text-align: center; 
+        } 
+        
+        
+          h2 {
+            width: 350px;
+            animation-name: text;        
+            animation-duration: 6s;
+            animation-iteration-count:infinite;
+            background-color: rgb(255, 210, 85);
+            text-align: right;
+        }
+
+        #one {
+            animation-timing-function: ease;
+        }
+
+        #two {
+            animation-timing-function: linear;
+        }
+
+        #three {
+            animation-timing-function: ease-in;
+        }
+
+        #four {
+            animation-timing-function: ease-out;
+        }
+
+        #five {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes text {
+            from {
+                margin-right: 0%;
+            }
+
+            to {
+                margin-left: 100%;
+            }
+        }
+    </style> 
+    
+</head>
+<body>
+    
+      <div id="main"> 
+        <div class="gfg">ACCESS INFOTECH LIMITED</div> 
+        <div class="geeks"> 
+           User Registration form
+        </div> 
+    </div> 
+    
+      <h2 id="one">Limited Liability Protection</h2>
+    <h2 id="two">Business Credibility</h2>
+    <h2 id="three">Legal Compliance.</h2>
+    <h2 id="four">Access to Funding</h2>
+    <h2 id="five">
+     Operational Benefits
+    </h2>
+    
+   
+    <form action="RegisterServlet" method="post">
+        
+     
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="gender"> Gender:</label>
+        <input type="text" id="gender" name="gender"><br><br>
+        
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
